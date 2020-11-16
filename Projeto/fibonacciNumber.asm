@@ -50,7 +50,7 @@ section .text
         call scanf
         add esp, 8
 
-        mov eax, 0
+        xor eax, eax
         mov ebx, [num]
 
         cmp ebx, 0
@@ -67,5 +67,5 @@ section .text
             add esp, 12
 
             mov eax, 1
-            mov ebx, 0
+            xor ebx, ebx
             int 80h
